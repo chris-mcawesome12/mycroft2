@@ -23,11 +23,11 @@ class PersonalitySkill1(MycroftSkill):
             require("FreddyOrJasonKeyword").build()
         self.register_intent(freddy_or_jason_intent, self.handle_freddy_or_jason_intent)
 	
-	bay_doors_intent = IntentBuilder("BayDoors").\
+	bay_doors_intent = IntentBuilder("BayDoorsIntent").\
             require("BayDoorsKeyword").build()
         self.register_intent(bay_doors_intent, self.handle_bay_doors_intent)
 		
-	meaning_of_life_intent = IntentBuilder("MeaningOfLife").\
+	meaning_of_life_intent = IntentBuilder("MeaningOfLifeIntent").\
             require("MeaningOfLifeKeyword").build()
         self.register_intent(meaning_of_life_intent, self.handle_meaning_of_life_intent)
 	
