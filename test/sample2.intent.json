@@ -1,0 +1,7 @@
+{
+  "utterance": "Freddy or jason",
+  "intent_type": "FreddyOrJasonIntent",
+  "intent": {
+    "FreddyOrJasonKeyword": "freddy or jason"
+  }
+}
