@@ -18,10 +18,11 @@ class PersonalitySkill1(MycroftSkill):
             require("MattOrDaveKeyword").build()
 	self.register_intent(matt_or_dave_intent, self.handle_matt_or_dave_intent)
 
-    def initialize(self):
+	
         freddy_or_jason_intent = IntentBuilder("FreddyOrJasonIntent").\
             require("FreddyOrJasonKeyword").build()
         self.register_intent(freddy_or_jason_intent, self.handle_freddy_or_jason_intent)
+	
 	
     def handle_matt_or_dave_intent(self, message):
 	self.speak_dialog("matt.dave")
