@@ -23,12 +23,26 @@ class PersonalitySkill1(MycroftSkill):
             require("FreddyOrJasonKeyword").build()
         self.register_intent(freddy_or_jason_intent, self.handle_freddy_or_jason_intent)
 	
+	bay_doors_intent = IntentBuilder("BayDoors").\
+            require("BayDoorsKeyword").build()
+        self.register_intent(bay_doors_intent, self.handle_bay_doors_intent)
+		
+	meaning_of_life_intent = IntentBuilder("MeaningOfLife").\
+            require("MeaningOfLifeKeyword").build()
+        self.register_intent(meaning_of_life_intent, self.handle_meaning_of_life_intent)
+	
 	
     def handle_matt_or_dave_intent(self, message):
 	self.speak_dialog("matt.dave")
     
     def handle_freddy_or_jason_intent(self, message):
         self.speak_dialog("freddy.jason")
+	
+    def handle_bay_doors_intent(self, message):
+        self.speak_dialog("bay.doors")
+	
+    def handle_meaning_of_life_intent(self, message):
+        self.speak_dialog("meaning.life")
 	
     def stop(self):
         pass
