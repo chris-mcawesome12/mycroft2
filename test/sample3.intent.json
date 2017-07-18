@@ -1,0 +1,7 @@
+{
+  "utterance": "Pod bay doors",
+  "intent_type": "BayDoorsIntent",
+  "intent": {
+    "BayDoorsKeyword": "pod bay doors"
+  }
+}
