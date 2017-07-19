@@ -1,0 +1,7 @@
+{
+  "utterance": "Who is kate",
+  "intent_type": "KateIntent",
+  "intent": {
+    "KateKeyword": "who is kate"
+  }
+}

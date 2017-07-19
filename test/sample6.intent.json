@@ -1,0 +1,7 @@
+{
+  "utterance": "Who is shaymus",
+  "intent_type": "ShaymusIntent",
+  "intent": {
+    "ShaymusKeyword": "who is shaymus"
+  }
+}
