@@ -31,6 +31,14 @@ class PersonalitySkill1(MycroftSkill):
             require("MeaningOfLifeKeyword").build()
         self.register_intent(meaning_of_life_intent, self.handle_meaning_of_life_intent)
 	
+	shaymus_intent = IntentBuilder("ShaymusIntent").\
+            require("ShaymusKeyword").build()
+        self.register_intent(shaymus_intent, self.handle_shaymus_intent)
+		
+	kate_intent = IntentBuilder("KateIntent").\
+            require("KateKeyword").build()
+        self.register_intent(kate_intent, self.handle_kate_intent)
+	
 	
     def handle_matt_or_dave_intent(self, message):
 	self.speak_dialog("matt.dave")
@@ -43,6 +51,12 @@ class PersonalitySkill1(MycroftSkill):
 	
     def handle_meaning_of_life_intent(self, message):
         self.speak_dialog("meaning.life")
+	
+    def handle_shaymus_intent(self, message):
+        self.speak_dialog("shaymus")
+		
+    def handle_kate_intent(self, message):
+        self.speak_dialog("kate")
 	
     def stop(self):
         pass
